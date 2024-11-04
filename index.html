@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="container">
+                <div class="nav">
+                    <div class="nav__left">
+                        <img class="nav__left__menu" src="./img/icons/menu.svg" alt="menu-logo">
+                        <img src="./img/icons/logo.svg" alt="Logo">
+
+                        <div class="nav__likns">
+                            <ul class="nav__likns__menu">
+                                <li>
+                                    <a href="#">Главная</a>
+                                    <hr class="nav__likns__menu__1">
+                                </li>
+                                <li>
+                                    <a href="#">Квартиры</a>
+                                    <hr class="nav__likns__menu__2">
+                                </li>
+                                <li>
+                                    <a href="#">Контакты</a>
+                                    <hr class="nav__likns__menu__3">
+                                </li>
+                                <li>
+                                    <a href="#">О нас</a>
+                                    <hr class="nav__likns__menu__4">
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="nav__contact">
+                        <div class="nav__contact__box">
+                            <div class="nav__contact__email">
+                                <div class="nav__contact__email__box">
+                                    <img class="nav__contact__email__box__img" src="./img/icons/email.svg" alt="email">
+                                </div>
+                                <span class="nav__contact__email__text">mail@yandex.ru</span>
+                            </div>
+                            <div class="nav__contact__num">
+                                <div class="nav__contact__num__box">
+                                    <img class="nav__contact__num__box__img" src="./img/icons/tel-num.svg" alt="Number">
+                                </div>
+                                <span class="nav__contact__num__text">+7 (919) 714-25-00</span>
+                            </div>
+                        </div>
+                        <button class="nav__contact__maneger">Заказать звонок</button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="container">
+            <div class="header">
+                <div class="header__left">
+                    <h1 class="header__left__head">Аренда квартир в Березниках</h1>
+                    <p class="header__left__text">На длительный срок
+                        или посуточно</p>
+                    <button class="header__left__btn">Смотреть варианты</button>
+                </div>
+                <div class="header__right">
+                    <picture>
+                        <source media="(max-width: 900px)" srcset="./img/hero-bg-tablet.png">
+                        <source media="(max-width: 1210px)" srcset="./img/hero-bg-small-desktop.png">
+                        <source media="(min-width: 1301px)" srcset="./img/hero-bg.png">
+                        <img src="./img/hero-bg.png" alt="Главная фото">
+                    </picture>
+                </div>
+
+            </div>
+        </div>
+    </header>
+    <picture>
+        <source media="(max-width: 670px)" srcset="./img/bg-mobile.png">
+        <source media="(max-width: 900px)" srcset="./img/bg-blue-tablet.png">
+        <source media="(max-width: 1300px)" srcset="./img/bg-smal-desktop.png">
+        <source media="(min-width: 1301px)" srcset="./img/bg.png">
+        <img class="bg__header" src="./img/bg.png" alt="img-blue">
+    </picture>
+
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
