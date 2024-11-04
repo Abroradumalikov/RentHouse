@@ -232,7 +232,7 @@ body {
     padding: 90px 0 0 0;
     position: fixed;
     flex-direction: column;
-    width: 30%;
+    width: 40%;
     height: 100%;
     left: 0;
     top: 0;
@@ -333,5 +333,23 @@ body {
   }
   .header__left__text {
     color: var(--color-fff);
+  }
+}
+@media only screen and (max-width: 480px) {
+  .picture {
+    display: none;
+  }
+  .nav__contact__email,
+  .nav__contact__num {
+    flex-direction: column;
+  }
+  .nav__contact__email__text,
+  .nav__contact__num__text {
+    color: var(--color-1111);
+    font-size: 10px;
+    line-height: 15px;
+    position: absolute;
+    top: 25px;
+    right: 10px;
   }
 }
