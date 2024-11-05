@@ -12,59 +12,7 @@
   --color-btn: #5cb85c;
   --color-yellow: #fcc226;
 }
-@font-face {
-  font-display: swap;
-  font-family: "Montserrat regular";
-  font-style: normal;
-  font-weight: 400;
-  src: url("../fonts/montserrat-v26-latin-regular.woff2") format("woff2");
-}
-@font-face {
-  font-display: swap;
-  font-family: "Montserrat small";
-  font-style: normal;
-  font-weight: 500;
-  src: url("../fonts/montserrat-v26-latin-500.woff2") format("woff2");
-}
-@font-face {
-  font-display: swap;
-  font-family: "Montserrat 600";
-  font-style: normal;
-  font-weight: 600;
-  src: url("../fonts/montserrat-v26-latin-600.woff2") format("woff2");
-}
-@font-face {
-  font-display: swap;
-  font-family: "Montserrat 700";
-  font-style: normal;
-  font-weight: 700;
-  src: url("../fonts/montserrat-v26-latin-700.woff2") format("woff2");
-}
-@font-face {
-  font-display: swap;
-  font-family: "Montserrat big";
-  font-style: normal;
-  font-weight: 800;
-  src: url("../fonts/montserrat-v26-latin-800.woff2") format("woff2");
-}
 
-/* open-sans-regular - latin */
-@font-face {
-  font-display: swap;
-  font-family: "Open Sans";
-  font-style: normal;
-  font-weight: 400;
-  src: url("../fonts/open-sans-v40-latin-regular.woff2") format("woff2");
-}
-
-/* manrope-regular - latin */
-@font-face {
-  font-display: swap;
-  font-family: "Manrope";
-  font-style: normal;
-  font-weight: 400;
-  src: url("../fonts/manrope-v15-latin-regular.woff2") format("woff2");
-}
 body {
   position: relative;
 }
@@ -74,11 +22,10 @@ body {
 }
 .bg__header {
   position: absolute;
-  right: 0;
+  right: 250px;
   z-index: -2;
   top: 0;
 }
-/* Navigation style */
 .nav {
   display: flex;
   align-items: center;
@@ -110,32 +57,34 @@ body {
 .nav__likns__menu__3,
 .nav__likns__menu__4 {
   width: 0;
-  height: 1px;
+  height: 2px;
   background-color: var(--color-1111);
   transition: width 0.2s ease;
   border: none;
 }
 
 .nav__likns__menu li:hover .nav__likns__menu__1 {
-  width: 54px;
+  width: 65.08px;
 }
 
 .nav__likns__menu li:hover .nav__likns__menu__2 {
-  width: 68px;
+  width: 78.96px;
 }
 
 .nav__likns__menu li:hover .nav__likns__menu__3 {
-  width: 67px;
+  width: 75.45px;
 }
 
 .nav__likns__menu li:hover .nav__likns__menu__4 {
-  width: 39px;
+  width: 44.36px;
 }
 
 .nav__likns__menu li a {
+  font-family: "Montserrat", sans-serif; /* 600 weight */
+  font-weight: 600;
   font-size: 16px;
   line-height: 19.5px;
-  font-family: "Montserrat 600";
+
   color: var(--color-1111);
   text-decoration: none;
   position: relative;
@@ -159,18 +108,22 @@ body {
 }
 .nav__contact__num__text,
 .nav__contact__email__text {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
   font-size: 16px;
   line-height: 19.5px;
   color: var(--color-fff);
-  font-family: "Montserrat regular";
 }
 .nav__contact__maneger {
+  font-family: "Montserrat", sans-serif; /* 400 weight */
+  font-weight: 400;
+
   background: linear-gradient(135deg, #ffa726, #fb8c00);
   padding: 15px 30px;
   border: none;
   border-radius: 25px;
   color: var(--color-fff);
-  font-family: "Montserrat 600";
+
   font-size: 18px;
   line-height: 21.94px;
   cursor: pointer;
@@ -197,20 +150,24 @@ body {
   background-size: cover;
 }
 .header__left__head {
+  font-family: "Montserrat", sans-serif; /* 800 weight */
+  font-weight: 800;
   font-size: 40px;
   line-height: 48.76px;
   color: var(--color-1111);
-  font-family: "Montserrat big";
+
   margin-bottom: 20px;
 }
 .header__left__text {
+  font-family: "Open Sans", sans-serif;
   font-size: 24px;
   line-height: 32.68px;
   color: var(--color-1111);
-  font-family: "Open Sans";
   margin-bottom: 60px;
 }
 .header__left__btn {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
   background: linear-gradient(135deg, #ffa726, #fb8c00);
   padding: 15px 30px;
   font-size: 18px;
@@ -219,12 +176,67 @@ body {
   border: none;
   border-radius: 25px;
   cursor: pointer;
-  font-family: "Montserrat 600";
 }
 .header__left__btn:hover {
   background: linear-gradient(135deg, #fb8c00, #f57c00);
 }
+/* main style section 1 */
+.boxs {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* To'rt ustunli grid */
+  gap: 20px;
+}
+
+.box {
+  max-width: 305px;
+  background-color: var(--color-fff);
+  box-shadow: 0 5px 20px rgba(17, 17, 17, 0.3);
+  border-radius: 10px;
+  overflow: hidden;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+.box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(17, 17, 17, 0.4);
+}
+
+.box img {
+  margin-bottom: 20px;
+  border-radius: 8px;
+  max-width: 100%;
+  transition: opacity 0.3s ease;
+}
+
+.box img:hover {
+  opacity: 0.9;
+}
+
+.box p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--color-1111);
+  text-align: center;
+  max-width: 265px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+@media only screen and (max-width: 1700px) {
+  .bg__header {
+    position: absolute;
+    right: 0;
+    z-index: -2;
+    top: 0;
+  }
+}
 @media only screen and (max-width: 1300px) {
+  .boxs {
+    grid-template-columns: repeat(3, 1fr); /* Uch ustunli grid */
+  }
   .nav__left__menu {
     display: block;
   }
@@ -242,6 +254,7 @@ body {
     transform: translateX(-100%);
     transition: all 0.3s ease;
     z-index: 2;
+    overflow-x: auto;
   }
   .active {
     transform: translateX(0);
@@ -273,6 +286,9 @@ body {
   }
 }
 @media only screen and (max-width: 1210px) {
+  .boxs {
+    grid-template-columns: repeat(3, 1fr); /* Uch ustunli grid */
+  }
   .header {
     column-gap: 57px;
   }
@@ -289,18 +305,26 @@ body {
     max-width: 171px;
   }
   .header__left__btn {
+    font-family: "Montserrat";
+    font-weight: 700;
     padding: 10px 30px;
     font-size: 14px;
     line-height: 17.07px;
-    font-family: "Montserrat 700";
+  }
+  .box {
+    max-width: 280px; /* Kichikroq o'lchovda */
   }
 }
+
 @media only screen and (max-width: 900px) {
   .nav__contact__email__text {
     display: none;
   }
   .nav__contact__box {
     column-gap: 7px;
+  }
+  .boxs {
+    grid-template-columns: repeat(2, 1fr); /* Ikki ustunli grid */
   }
 }
 @media only screen and (max-width: 721px) {
@@ -334,6 +358,9 @@ body {
   .header__left__text {
     color: var(--color-fff);
   }
+  .boxs {
+    grid-template-columns: repeat(2, 1fr); /* Ikki ustunli grid */
+  }
 }
 @media only screen and (max-width: 480px) {
   .picture {
@@ -351,5 +378,18 @@ body {
     position: absolute;
     top: 25px;
     right: 10px;
+  }
+
+  .boxs {
+    grid-template-columns: 1fr; /* Bitta ustunli grid */
+  }
+
+  .box {
+    max-width: 100%; /* Kichik ekranlarda to'liq kenglik */
+    padding: 15px; /* Paddingni kamaytirish */
+  }
+
+  .box p {
+    font-size: 14px; /* Matnni kichikroq qilish */
   }
 }
