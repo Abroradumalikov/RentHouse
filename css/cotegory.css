@@ -1,0 +1,237 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+:root {
+  --navfooter: #232536;
+  --main: #ffffff;
+  --btns: #ffd050;
+  --mediumgey: #6d6e76;
+  --darkgrey: #4c4c4c;
+  --cotegory-header: #f4f0f8;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Sen";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/sen-v9-latin-700.woff2") format("woff2");
+}
+@font-face {
+  font-display: swap;
+  font-family: "Inter normal";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/inter-v18-latin-regular.woff2") format("woff2");
+}
+@font-face {
+  font-display: swap;
+  font-family: "Inter fiveh";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/inter-v18-latin-500.woff2") format("woff2");
+}
+@font-face {
+  font-display: swap;
+  font-family: "Inter sixh";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/inter-v18-latin-600.woff2") format("woff2");
+}
+@font-face {
+  font-display: swap;
+  font-family: "Inter nineh";
+  font-style: normal;
+  font-weight: 900;
+  src: url("../fonts/inter-v18-latin-900.woff2") format("woff2");
+}
+.buissnes {
+  background-color: var(--cotegory-header);
+  padding: 80px 0;
+}
+.buissnes__texts {
+  text-align: center;
+}
+.buissnes__texts__head {
+  font-size: 56px;
+  line-height: 64px;
+  font-family: "Sen";
+  color: var(--navfooter);
+}
+.buissnes__texts__text {
+  font-size: 16px;
+  line-height: 28px;
+  color: var(--mediumgey);
+  max-width: 515px;
+  font-family: "Inter normal";
+  margin: 16px auto 32px auto;
+}
+.buissnes__texts__span {
+  font-size: 16px;
+  line-height: 20px;
+  color: var(--navfooter);
+  font-family: "Inter fiveh";
+}
+.searching {
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+  justify-content: center;
+  margin-top: 57px;
+}
+.searching__buissnes-search {
+  width: 50%;
+  padding: 14px 0 14px 14px;
+  border: 1px solid #6d6e7680;
+  border-radius: 20px;
+}
+.searching__buissnes-search::placeholder {
+  font-size: 16px;
+  line-height: 28px;
+  color: var(--navfooter);
+  font-family: "Inter normal";
+}
+.searching__buissnes-click {
+  border: 1px solid #6d6e7680;
+  background: transparent;
+  padding: 10px 30px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.results-container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.card {
+  width: calc(25% - 15px);
+  min-width: 200px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.card .title {
+  margin: 10px 0;
+  font-weight: bold;
+}
+
+.card .price {
+  color: #2ecc71;
+  font-weight: bold;
+}
+.loaderbox {
+  display: none;
+}
+.loaderbox-block {
+  display: block;
+}
+.loader {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: #23253681;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.lds-spinner,
+.lds-spinner div,
+.lds-spinner div:after {
+  box-sizing: border-box;
+}
+.lds-spinner {
+  color: currentColor;
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.lds-spinner div {
+  transform-origin: 40px 40px;
+  animation: lds-spinner 1.2s linear infinite;
+}
+.lds-spinner div:after {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 3.2px;
+  left: 36.8px;
+  width: 6.4px;
+  height: 17.6px;
+  border-radius: 20%;
+  background: currentColor;
+}
+.lds-spinner div:nth-child(1) {
+  transform: rotate(0deg);
+  animation-delay: -1.1s;
+}
+.lds-spinner div:nth-child(2) {
+  transform: rotate(30deg);
+  animation-delay: -1s;
+}
+.lds-spinner div:nth-child(3) {
+  transform: rotate(60deg);
+  animation-delay: -0.9s;
+}
+.lds-spinner div:nth-child(4) {
+  transform: rotate(90deg);
+  animation-delay: -0.8s;
+}
+.lds-spinner div:nth-child(5) {
+  transform: rotate(120deg);
+  animation-delay: -0.7s;
+}
+.lds-spinner div:nth-child(6) {
+  transform: rotate(150deg);
+  animation-delay: -0.6s;
+}
+.lds-spinner div:nth-child(7) {
+  transform: rotate(180deg);
+  animation-delay: -0.5s;
+}
+.lds-spinner div:nth-child(8) {
+  transform: rotate(210deg);
+  animation-delay: -0.4s;
+}
+.lds-spinner div:nth-child(9) {
+  transform: rotate(240deg);
+  animation-delay: -0.3s;
+}
+.lds-spinner div:nth-child(10) {
+  transform: rotate(270deg);
+  animation-delay: -0.2s;
+}
+.lds-spinner div:nth-child(11) {
+  transform: rotate(300deg);
+  animation-delay: -0.1s;
+}
+.lds-spinner div:nth-child(12) {
+  transform: rotate(330deg);
+  animation-delay: 0s;
+}
+@keyframes lds-spinner {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}

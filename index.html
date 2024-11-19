@@ -9,120 +9,127 @@
 </head>
 
 <body>
+
     <header>
         <nav>
             <div class="container">
-                <div class="nav">
-                    <div class="nav__left">
-                        <img class="nav__left__menu" src="./img/icons/menu.svg" alt="menu-logo">
-                        <img src="./img/icons/logo.svg" alt="Logo">
-
-                        <div class="nav__likns">
-                            <ul class="nav__likns__menu">
-                                <li>
-                                    <a href="#">Главная</a>
-                                    <hr class="nav__likns__menu__1">
-                                </li>
-                                <li>
-                                    <a href="#">Квартиры</a>
-                                    <hr class="nav__likns__menu__2">
-                                </li>
-                                <li>
-                                    <a href="#">Контакты</a>
-                                    <hr class="nav__likns__menu__3">
-                                </li>
-                                <li>
-                                    <a href="#">О нас</a>
-                                    <hr class="nav__likns__menu__4">
-                                </li>
-                            </ul>
-                        </div>
+                <div class="menu">
+                    <div class="menu__img">
+                        <a href="./index.html"><img src="./images/icons/Logo.svg" alt="{Finsweet"></a>
                     </div>
-                    <div class="nav__contact">
-                        <div class="nav__contact__box">
-                            <div class="nav__contact__email">
-                                <div class="nav__contact__email__box">
-                                    <img class="nav__contact__email__box__img" src="./img/icons/email.svg" alt="email">
-                                </div>
-                                <span class="nav__contact__email__text">mail@yandex.ru</span>
-                            </div>
-                            <div class="nav__contact__num">
-                                <div class="nav__contact__num__box">
-                                    <img class="nav__contact__num__box__img" src="./img/icons/tel-num.svg" alt="Number">
-                                </div>
-                                <span class="nav__contact__num__text">+998(90)253 09 09</span>
-                            </div>
-                        </div>
-                        <button class="nav__contact__maneger">Заказать звонок</button>
+                    <div class="menu__bar"><img class="menu__bar__img" src="./images/icons/icons8-menu-bar-24 (1).png"
+                            alt=""></div>
+                    <div class="menu__right">
+                        <ul class="menu__right__menus">
+                            <li class="menu__right__menus__item"><a class="menu__right__menus__item__links"
+                                    href="./index.html">Home</a></li>
+                            <li class="menu__right__menus__item"><a class="menu__right__menus__item__links"
+                                    href="./category.html">Category</a></li>
+                            <li class="menu__right__menus__item"><a class="menu__right__menus__item__links"
+                                    href="./aboutUs.html">About Us</a></li>
+                            <li class="menu__right__menus__item"><a class="menu__right__menus__item__links"
+                                    href="./register.html">Register</a></li>
+
+                        </ul>
+                        <a class="menu__right__login" href="./login.html"><button
+                                class="menu__right__login__btn">Login</button></a>
                     </div>
                 </div>
             </div>
         </nav>
-        <div class="container">
-            <div class="header">
-                <div class="header__left">
-                    <h1 class="header__left__head">Аренда квартир в Березниках</h1>
-                    <p class="header__left__text">На длительный срок
-                        или посуточно</p>
-                    <button class="header__left__btn">Смотреть варианты</button>
+        <section class="head">
+            <div class="container">
+                <div class="head__texts">
+                    <span class="head__texts__startup"><span class="head__texts__startup__posted">Posted on</span>
+                        startup</span>
+                    <h1 class="head__texts__heading">Step-by-step guide to choosing great font pairs</h1>
+                    <span class="head__texts__data">By <span class="head__texts__data__name">James West</span> | May 23,
+                        2022
+                    </span>
+                    <p class="head__texts__text">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                        dolore eu fugiat nulla
+                        pariatur. Excepteur sint occaecat cupidatat non proident.</p>
+                    <button class="head__texts__btn">Read More ></button>
                 </div>
-                <div class="header__right">
-                    <picture>
-                        <source media="(max-width: 900px)" srcset="./img/hero-bg-tablet.png">
-                        <source media="(max-width: 1210px)" srcset="./img/hero-bg-small-desktop.png">
-                        <source media="(min-width: 1301px)" srcset="./img/hero-bg.png">
-                        <img src="./img/hero-bg.png" alt="Главная фото">
-                    </picture>
-                </div>
-
             </div>
-        </div>
+        </section>
     </header>
-    <picture class="picture">
-        <source media="(max-width: 670px)" srcset="./img/bg-mobile.png">
-        <source media="(max-width: 900px)" srcset="./img/bg-blue-tablet.png">
-        <source media="(max-width: 1300px)" srcset="./img/bg-smal-desktop.png">
-        <source media="(min-width: 1301px)" srcset="./img/bg.png">
-        <img class="bg__header" src="./img/bg.png" alt="img-blue">
-    </picture>
-
     <main>
         <section>
             <div class="container">
-                <div class="boxs">
-                    <div class="box">
-                        <img src="./img/icons/XMLID 1619.svg" alt="Файл">
-                        <div class="box__text">
-                            <p>Заключаем договоры, предоставляет отчётные документы</p>
-
-                        </div>
-
+                <h2 class="popular">Popular Blogs</h2>
+                <div class="boxs" id="boxs"></div>
+                <hr class="hr">
+            </div>
+        </section>
+        <section>
+            <div class="container">
+                <h2 class="head-plan">Choose A Catagory</h2>
+                <div class="plans">
+                    <div class="plan">
+                        <img class="plan__icon" src="./images/icons/Icon.svg" alt="Business">
+                        <h3 class="plan__Business">Business</h3>
+                        <p class="plan__text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
                     </div>
-                    <div class="box">
-                        <img src="./img/icons/Group 13.svg" alt="Файл">
-                        <div class="box__text">
-                            <p>Наличный и 
-                                безналичный расчёт</p>
-                        </div>
+                    <div class="plan">
+                        <img class="plan__icon plan__icon--2" src="./images/icons/Icon (2).svg" alt="Business">
+                        <h3 class="plan__Business">Startup</h3>
+                        <p class="plan__text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
                     </div>
-                    <div class="box">
-                        <img src="./img/icons/Group 13-time.svg" alt="Файл">
-                        <div class="box__text">
-                            <p>Бронирование и заселение круглосуточно</p>
-                        </div>
+                    <div class="plan">
+                        <img class="plan__icon" src="./images/icons/Icon (3).svg" alt="Business">
+                        <h3 class="plan__Business">Economy</h3>
+                        <p class="plan__text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
                     </div>
-                    <div class="box box1">
-                        <img src="./img/icons/Group.svg" alt="Файл">
-                        <div class="box__text1">
-                            <p>Полная
-                                конфиденциальность</p>
-                        </div>
-
+                    <div class="plan">
+                        <img class="plan__icon" src="./images/icons/business-and-trade 1.svg" alt="Business">
+                        <h3 class="plan__Business">Technology</h3>
+                        <p class="plan__text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="loaderbox">
+                <div class="loader">
+                    <div class="lds-spinner">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
                     </div>
                 </div>
             </div>
         </section>
+
     </main>
+    <footer>
+        <div class="container">
+            <div class="footer">
+                <div class="footer__left">
+                    <span class="footer__left__address">Finstreet 118 2561 Fintown</span>
+                    <span class="footer__left__email">Hello@finsweet.com 020 7993 2905</span>
+                </div>
+                <div class="footer__right">
+
+                    <a href="https://www.instagram.com/a.abdumal1kov"> <img src="./images/icons/facebook.svg"
+                            alt="Facebook icon"></a>
+                    <a href="https://www.instagram.com/a.abdumal1kov"> <img src="./images/icons/Vector.svg"
+                            alt="Twitter icon"></a>
+                    <a href="https://www.instagram.com/a.abdumal1kov"> <img src="./images/icons/instagram.svg"
+                            alt="Instagram icon"></a>
+                    <a href="https://www.instagram.com/a.abdumal1kov"> <img src="./images/icons/linkdin.svg"
+                            alt="Linkedin icon"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
     <script src="./js/main.js"></script>
 </body>
 

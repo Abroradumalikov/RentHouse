@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/register.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="container">
+                <div class="menu">
+                    <div class="menu__img">
+                        <a href="./index.html"><img src="./images/icons/Logo.svg" alt="{Finsweet"></a>
+                    </div>
+                    <div class="menu__bar"><img class="menu__bar__img" src="./images/icons/icons8-menu-bar-24 (1).png"
+                            alt=""></div>
+                    <div class="menu__right">
+                        <ul class="menu__right__menus">
+                            <li class="menu__right__menus__item"><a class="menu__right__menus__item__links"
+                                    href="./index.html">Home</a></li>
+                            <li class="menu__right__menus__item"><a class="menu__right__menus__item__links"
+                                    href="./category.html">Category</a></li>
+                            <li class="menu__right__menus__item"><a class="menu__right__menus__item__links"
+                                    href="./aboutUs.html">About Us</a></li>
+                            <li class="menu__right__menus__item"><a class="menu__right__menus__item__links"
+                                    href="./register.html">Register</a></li>
+
+                        </ul>
+                        <a class="menu__right__login" href="./login.html"><button
+                                class="menu__right__login__btn">Login</button></a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="container">
+            <div class="Register">
+                <form>
+                    <h2>Register</h2>
+                    <label>Firstname</label>
+                    <input id="firstname" type="text">
+                    <span class="errorFirst" id="errorFirst">User must be between 2 and 15 characters and
+                        UpperCase</span>
+                    <label>Lastname</label>
+                    <input id="lastName" type="text">
+                    <span class="errorLast" id="errorLast">User must be between 2 and 25 characters and UpperCase</span>
+                    <label>Username</label>
+                    <input id="userName" type="text">
+                    <span class="errorUser" id="errorName">User must be between 3 and 25 characters and UpperCase</span>
+                    <label>Password</label>
+                    <input type="password" id="userPassword">
+                    <span class="errorPassword" id="errorPassword">Password must have at least 8 characters, including
+                        at
+                        least
+                        1
+                        lowercase character and 1 uppercase character</span>
+                    <button class="button" id="button" type="submit">Register</button>
+                </form>
+            </div>
+        </div>
+        <div class="loaderbox">
+            <div class="loader">
+                <div class="lds-spinner">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <footer>
+        <div class="container">
+            <div class="footer">
+                <div class="footer__left">
+                    <span class="footer__left__address">Finstreet 118 2561 Fintown</span>
+                    <span class="footer__left__email">Hello@finsweet.com 020 7993 2905</span>
+                </div>
+                <div class="footer__right">
+
+                    <a href="https://www.instagram.com/a.abdumal1kov"> <img src="./images/icons/facebook.svg"
+                            alt="Facebook icon"></a>
+                    <a href="https://www.instagram.com/a.abdumal1kov"> <img src="./images/icons/Vector.svg"
+                            alt="Twitter icon"></a>
+                    <a href="https://www.instagram.com/a.abdumal1kov"> <img src="./images/icons/instagram.svg"
+                            alt="Instagram icon"></a>
+                    <a href="https://www.instagram.com/a.abdumal1kov"> <img src="./images/icons/linkdin.svg"
+                            alt="Linkedin icon"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="./js/register.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
